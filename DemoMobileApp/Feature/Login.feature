@@ -1,6 +1,6 @@
 Feature: Login
 
-  Scenario: Successful login with valid user
+  Scenario Outline: login to mobile App with "<username>"
     Given the app is launched
     When I tap on the "<username>"
     And I tap on the "<loginButton>" button

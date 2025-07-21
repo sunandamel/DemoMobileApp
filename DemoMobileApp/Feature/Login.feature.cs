@@ -74,17 +74,17 @@ namespace NewDemoMobileApp.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Successful login with valid user")]
+        [NUnit.Framework.DescriptionAttribute("login to mobile App with \"<username>\"")]
         [NUnit.Framework.TestCaseAttribute("standard_user", "LOGIN", "PRODUCTS", null)]
         [NUnit.Framework.TestCaseAttribute("locked_out_user", "LOGIN", "Sorry, this user has been locked out.", null)]
-        public void SuccessfulLoginWithValidUser(string username, string loginButton, string expectedScreenOrError, string[] exampleTags)
+        public void LoginToMobileAppWithUsername(string username, string loginButton, string expectedScreenOrError, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("username", username);
             argumentsOfScenario.Add("loginButton", loginButton);
             argumentsOfScenario.Add("expectedScreenOrError", expectedScreenOrError);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful login with valid user", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login to mobile App with \"<username>\"", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 3
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
